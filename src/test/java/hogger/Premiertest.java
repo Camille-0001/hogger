@@ -44,7 +44,7 @@ public class PremierTest {
 			WebElement gold = driver.findElement(By.xpath("//span[@class='moneygold']"));
 			System.out.println(gold.getText());
 			driver.navigate().back();
-			Thread.sleep(5000);
+			Thread.sleep(3000);			//dirty fix for sudden crashes
 		}
 
 		System.out.println("exiting with observed list length " + hoggerpage.getLootTableLength());
